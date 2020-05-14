@@ -27,6 +27,7 @@ public class LobbyController : MonoBehaviour
 
     public void PlayerReadyUp ()
     {
+        //Naive way to count ready players; Needs change
         playersReady++;
 
         if (playersReady == players.Items.Count)

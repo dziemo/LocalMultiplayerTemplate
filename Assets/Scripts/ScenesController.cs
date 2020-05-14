@@ -9,12 +9,14 @@ public class ScenesController : MonoBehaviour
     {
         SceneManager.sceneLoaded += SceneManager_sceneLoaded;
     }
-
+    
+    //Invoked on scene load
     private void SceneManager_sceneLoaded(Scene arg0, LoadSceneMode arg1)
     {
         if (arg0.name == "InputScene")
         {
-            SceneManager.SetActiveScene(SceneManager.GetSceneByName("InputScene"));
+            //Set InputScene active because Instantiated objects appear in current active scene
+            SceneManager.SetActiveScene(SceneManager.GetSceneByName("InputScene")); 
         }
     }
 
@@ -26,6 +28,7 @@ public class ScenesController : MonoBehaviour
     public void LoadGameScene ()
     {
         SceneManager.UnloadSceneAsync("Menu");
+        //Loading scene additive to keep InputScene in hierarchy
         SceneManager.LoadSceneAsync("Game", LoadSceneMode.Additive);
     }
 

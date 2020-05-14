@@ -6,6 +6,8 @@ using UnityEngine.UI;
 
 public class ReadyButtonController : MonoBehaviour
 {
+    //Just basic controller for a ready button
+
     bool isReady = false;
 
     public GameEvent playerReady, playerNotReady;

@@ -10,6 +10,7 @@ public class InputManagerUtility : MonoBehaviour
 
     private void OnPlayerJoined(PlayerInput playerInput)
     {
+        //Add player to RuntimeSet
         players.Add(playerInput.gameObject);
         playerJoinedEvent.Raise();
     }
