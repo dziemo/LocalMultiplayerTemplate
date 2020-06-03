@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using ScriptableObjectArchitecture;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;

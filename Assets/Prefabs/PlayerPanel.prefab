@@ -570,8 +570,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97f9a17a181cfcf4a835dbaa8ff32d7d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerReady: {fileID: 11400000, guid: 15945d261aec1ac418dbb48fb305ef89, type: 2}
-  playerNotReady: {fileID: 11400000, guid: 53e786ea6d0f8824399364ba9c20dd90, type: 2}
+  playerReady: {fileID: 11400000, guid: c21323de00085fb42bf651ad3d6012a5, type: 2}
+  playerNotReady: {fileID: 11400000, guid: 547cec7de9a89944a91885ef57d8ef37, type: 2}
   buttonText: {fileID: 1219089804}
   buttonImage: {fileID: 1318338973}
 --- !u!1 &4115835741838956776

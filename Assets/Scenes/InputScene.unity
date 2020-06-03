@@ -210,5 +210,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7314c648b4c14c488859ce41a2447f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerJoinedEvent: {fileID: 11400000, guid: d95459d03e8369f42986692216ceaf53, type: 2}
-  players: {fileID: 11400000, guid: 381b08a9305c65c4aae01203b1a76c38, type: 2}
+  playerJoinedEvent: {fileID: 11400000, guid: b51357af5841ed843b069f7f285f6f20, type: 2}
+  players: {fileID: 11400000, guid: 5363ab03c755c4c47846ef1de6f8b0f7, type: 2}

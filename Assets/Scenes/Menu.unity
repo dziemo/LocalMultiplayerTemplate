@@ -753,11 +753,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 194087734}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 752d5b49319023b4bb5fd3b8f1881ed1, type: 3}
+  m_Script: {fileID: 11500000, guid: 5758ca93461aeeb4589456a052b07d74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Event: {fileID: 11400000, guid: 53e786ea6d0f8824399364ba9c20dd90, type: 2}
-  Response:
+  _showDebugFields: 0
+  _enableGizmoDebugging: 1
+  _debugColor: {r: 0, g: 1, b: 1, a: 1}
+  _previouslyRegisteredEvent: {fileID: 0}
+  _event: {fileID: 11400000, guid: 547cec7de9a89944a91885ef57d8ef37, type: 2}
+  _response:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2015627756}
@@ -780,11 +784,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 194087734}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 752d5b49319023b4bb5fd3b8f1881ed1, type: 3}
+  m_Script: {fileID: 11500000, guid: 5758ca93461aeeb4589456a052b07d74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Event: {fileID: 11400000, guid: 855c713015030ff479176ba09804f6b5, type: 2}
-  Response:
+  _showDebugFields: 0
+  _enableGizmoDebugging: 1
+  _debugColor: {r: 0, g: 1, b: 1, a: 1}
+  _previouslyRegisteredEvent: {fileID: 0}
+  _event: {fileID: 11400000, guid: e8d06ebba5751844c850524ae0d4ed68, type: 2}
+  _response:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2015627756}
@@ -1372,8 +1380,8 @@ GameObject:
   - component: {fileID: 584114821}
   - component: {fileID: 584114822}
   - component: {fileID: 584114823}
-  - component: {fileID: 584114825}
   - component: {fileID: 584114824}
+  - component: {fileID: 584114825}
   - component: {fileID: 584114826}
   m_Layer: 0
   m_Name: LobbyController
@@ -1420,9 +1428,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 043aaa133146d884eadca6dddd53cf69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startGame: {fileID: 11400000, guid: f44977863b656fa449e5763795cef8a8, type: 2}
-  allPlayersReady: {fileID: 11400000, guid: 855c713015030ff479176ba09804f6b5, type: 2}
-  players: {fileID: 11400000, guid: 381b08a9305c65c4aae01203b1a76c38, type: 2}
+  startGame: {fileID: 11400000, guid: d4f07e2cfffc2d9429b167890154e722, type: 2}
+  allPlayersReady: {fileID: 11400000, guid: e8d06ebba5751844c850524ae0d4ed68, type: 2}
+  players: {fileID: 11400000, guid: 5363ab03c755c4c47846ef1de6f8b0f7, type: 2}
   playerUIs:
   - {fileID: 5830438941595276023}
   - {fileID: 840750344}
@@ -1438,15 +1446,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 584114819}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 752d5b49319023b4bb5fd3b8f1881ed1, type: 3}
+  m_Script: {fileID: 11500000, guid: 5758ca93461aeeb4589456a052b07d74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Event: {fileID: 11400000, guid: d95459d03e8369f42986692216ceaf53, type: 2}
-  Response:
+  _showDebugFields: 0
+  _enableGizmoDebugging: 1
+  _debugColor: {r: 0, g: 1, b: 1, a: 1}
+  _previouslyRegisteredEvent: {fileID: 11400000, guid: c21323de00085fb42bf651ad3d6012a5,
+    type: 2}
+  _event: {fileID: 11400000, guid: c21323de00085fb42bf651ad3d6012a5, type: 2}
+  _response:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 584114822}
-        m_MethodName: AssignPlayerPanel
+        m_MethodName: PlayerReadyUp
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1465,11 +1478,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 584114819}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 752d5b49319023b4bb5fd3b8f1881ed1, type: 3}
+  m_Script: {fileID: 11500000, guid: 5758ca93461aeeb4589456a052b07d74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Event: {fileID: 11400000, guid: 53e786ea6d0f8824399364ba9c20dd90, type: 2}
-  Response:
+  _showDebugFields: 0
+  _enableGizmoDebugging: 1
+  _debugColor: {r: 0, g: 1, b: 1, a: 1}
+  _previouslyRegisteredEvent: {fileID: 11400000, guid: 547cec7de9a89944a91885ef57d8ef37,
+    type: 2}
+  _event: {fileID: 11400000, guid: 547cec7de9a89944a91885ef57d8ef37, type: 2}
+  _response:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 584114822}
@@ -1492,15 +1510,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 584114819}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 752d5b49319023b4bb5fd3b8f1881ed1, type: 3}
+  m_Script: {fileID: 11500000, guid: 5758ca93461aeeb4589456a052b07d74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Event: {fileID: 11400000, guid: 15945d261aec1ac418dbb48fb305ef89, type: 2}
-  Response:
+  _showDebugFields: 0
+  _enableGizmoDebugging: 1
+  _debugColor: {r: 0, g: 1, b: 1, a: 1}
+  _previouslyRegisteredEvent: {fileID: 11400000, guid: b51357af5841ed843b069f7f285f6f20,
+    type: 2}
+  _event: {fileID: 11400000, guid: b51357af5841ed843b069f7f285f6f20, type: 2}
+  _response:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 584114822}
-        m_MethodName: PlayerReadyUp
+        m_MethodName: AssignPlayerPanel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1519,11 +1542,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 584114819}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 752d5b49319023b4bb5fd3b8f1881ed1, type: 3}
+  m_Script: {fileID: 11500000, guid: 5758ca93461aeeb4589456a052b07d74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Event: {fileID: 11400000, guid: f44977863b656fa449e5763795cef8a8, type: 2}
-  Response:
+  _showDebugFields: 0
+  _enableGizmoDebugging: 1
+  _debugColor: {r: 0, g: 1, b: 1, a: 1}
+  _previouslyRegisteredEvent: {fileID: 0}
+  _event: {fileID: 11400000, guid: d4f07e2cfffc2d9429b167890154e722, type: 2}
+  _response:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 584114821}
@@ -5879,7 +5906,7 @@ PrefabInstance:
     - target: {fileID: 4115835741838956775, guid: 3e28baa3636e57e4199d4a8ba953d723,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -0.00012207031
+      value: -0.00024414062
       objectReference: {fileID: 0}
     - target: {fileID: 4115835741838956775, guid: 3e28baa3636e57e4199d4a8ba953d723,
         type: 3}

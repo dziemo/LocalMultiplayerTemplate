@@ -2,11 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using ScriptableObjectArchitecture;
 
 public class InputManagerUtility : MonoBehaviour
 {
     public GameEvent playerJoinedEvent;
-    public GameObjectRuntimeSet players;
+    public GameObjectCollection players;
 
     private void OnPlayerJoined(PlayerInput playerInput)
     {
@@ -17,6 +18,6 @@ public class InputManagerUtility : MonoBehaviour
 
     private void OnDisable()
     {
-        players.Items.Clear();
+        players.Clear();
     }
 }

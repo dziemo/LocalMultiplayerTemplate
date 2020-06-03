@@ -4,11 +4,12 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.UI;
 using TMPro;
+using ScriptableObjectArchitecture;
 
 public class LobbyController : MonoBehaviour
 {
     public GameEvent startGame, allPlayersReady;
-    public GameObjectRuntimeSet players;
+    public GameObjectCollection players;
     public List<GameObject> playerUIs = new List<GameObject>();
     public TextMeshProUGUI countdownText;
 
@@ -30,7 +31,7 @@ public class LobbyController : MonoBehaviour
         //Naive way to count ready players; Needs change
         playersReady++;
 
-        if (playersReady == players.Items.Count)
+        if (playersReady == players.Count)
         {
             allPlayersReady.Raise();
             StartCoroutine(Countdown());
